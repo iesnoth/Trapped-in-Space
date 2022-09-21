@@ -22,7 +22,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 ## The Features
 
-- So Many Buttons
+- **So Many Buttons:**
     The big draw of the game is to play with a lot of buttons. None of them are labelled, and it's not obvious what any of them should do. "Low key frustration" is the mood I'm going for.
         - However, there are a couple puzzles where the buttons light up, suggesting they might have a sequence.
         - Half of them will just make a funny noise.
@@ -30,17 +30,17 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
     
     The coding goal is to have a few functions which work for every button, then some specialized events.
 
-- Animations
+- **Animations:**
     There will be some animations for figuring out complicated puzzles, or losing. I'd also like to add ambient animation (example: flickering lights) if I have time and space (haha).
 
-- Note-taking: A feature I'd like to add but not sure if I'll have time. Like I said, none of the buttons are labelled. But I'd like to give the players a way to take notes in-game. This is a stretch goal of sorts.
+- **Note-taking:** A feature I'd like to add but not sure if I'll have time. Like I said, none of the buttons are labelled. But I'd like to give the players a way to take notes in-game. This is a stretch goal of sorts.
 
-- Languages
+- **Languages**
     1. HTML
     2. CSS
     3. Javascript
 
-- Programs
+- **Programs**
     1. VSCode
     2. Photoshop CC
 
