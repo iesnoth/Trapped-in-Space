@@ -13,9 +13,13 @@ It's a low-stress puzzle box, with an open-ended nature which will have the tena
 ## Gameplay
 
 The player comes into the game blind, seeing just the console. Right away they can glean a few things about their situation:
+
     1. They are drifting through space,
+
     2. The ship they are in is low tech,
+
     3. There is no ticking clock: no depleting oxygen or food supply
+    
 However, there is no obvious goal. The little story the game has is found by pushing a _lot_ of buttons.
 
 There's no set way to "win" the game, but the player can lose, and lose spectacularly. 
