@@ -12,23 +12,28 @@ It's a low-stress puzzle box, with an open-ended nature which will have the tena
 
 ## Gameplay
 
-The player comes into the game blind, seeing just the console. They can glean a few things about their situation:
+The player comes into the game blind, seeing just the console. Right away they can glean a few things about their situation:
     1. They are drifting through space,
     2. The ship they are in is low tech,
     3. There is no ticking clock: no depleting oxygen or food supply
-However, there is no obvious goal. The little story the game has is found by push a _lot_ of buttons.
+However, there is no obvious goal. The little story the game has is found by pushing a _lot_ of buttons.
+
+There's no set way to "win" the game, but the player can lose, and lose spectacularly. 
 
 ## The Features
 
 - So Many Buttons
     The big draw of the game is to play with a lot of buttons. None of them are labelled, and it's not obvious what any of them should do. "Low key frustration" is the mood I'm going for.
         - However, there are a couple puzzles where the buttons light up, suggesting they might have a sequence.
-    Each button has at least an *on* and *off* position.
+        - Half of them will just make a funny noise.
+        - Each button has at least an *on* and *off* position.
     
-    The goal is to have a few functions which work for every button, then some specialized events.
+    The coding goal is to have a few functions which work for every button, then some specialized events.
 
 - Animations
-    These aren't high on my list of priorities, but if I have time I'd like to add some ambient animations, and some special ones as rewards for figuring out puzzles.
+    There will be some animations for figuring out complicated puzzles, or losing. I'd also like to add ambient animation (example: flickering lights) if I have time and space (haha).
+
+- Note-taking: A feature I'd like to add but not sure if I'll have time. Like I said, none of the buttons are labelled. But I'd like to give the players a way to take notes in-game. This is a stretch goal of sorts.
 
 - Languages
     1. HTML
@@ -41,8 +46,12 @@ However, there is no obvious goal. The little story the game has is found by pus
 
 ## Bugs
 
+TBD
+
 ## Citations
 
 All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
 
 ## Licensing
+
+TBD
