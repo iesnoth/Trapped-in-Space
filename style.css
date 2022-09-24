@@ -1,0 +1,11 @@
+#bg{
+    z-index: -2;
+}
+
+#top{
+    z-index: 0;
+}
+
+#bottom{
+    z-index:-1;
+}
