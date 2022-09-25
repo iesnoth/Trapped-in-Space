@@ -50,7 +50,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 ## Bugs
 
-TBD
+9/25/22 The circle dash doesn't scale well.
 
 ## Citations
 
