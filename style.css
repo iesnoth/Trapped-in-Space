@@ -1,11 +1,48 @@
-#bg{
-    z-index: -2;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
-#top{
-    z-index: 0;
+#container {
+    position: relative;
+    width: 1000px;
+    height: 667px;
+    margin: 50px;
+    display: flex;
+    justify-items: center;
 }
 
-#bottom{
-    z-index:-1;
+#bg {
+    position: absolute;
+    z-index: 1;
+    width: 1000px;
+}
+
+#top {
+    position: absolute;
+    z-index: 3;
+    width: 1000px;
+}
+
+#bottom {
+    position: absolute;
+    z-index: 2;
+    width: 1000px;
+}
+
+@media (max-width: 600px) {
+    html {
+        transform: rotate(90deg);
+        transform-origin: right top;
+        width: 100vh;
+        height: 100vw;
+        overflow-x: hidden;
+        position: absolute;
+        top: 100%;
+        right: 0;
+
+    }
 }

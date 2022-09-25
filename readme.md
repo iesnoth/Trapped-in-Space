@@ -55,6 +55,8 @@ TBD
 ## Citations
 
 **Add more citations later**
+Turning orientation code derived from this conversation: https://css-tricks.com/snippets/css/orientation-lock/, specifically a comment by "Secret"
+
 All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
 
 ## Licensing
