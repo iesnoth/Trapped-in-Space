@@ -26,7 +26,7 @@ body {
 }
 /* doesn't scale well */
 #circleDash{
-    z-index: 2;
+    z-index: 3;
     width: 140px;
     height: 140px;
     position: absolute;
@@ -34,16 +34,20 @@ body {
     left: 44%;
 }
 
+#stars{
+    z-index:2;
+}
+
 #bg{
     z-index: 1;
 }
 
 #top {
-    z-index: 4;
+    z-index: 5;
 }
 
 #bottom {
-    z-index: 3;
+    z-index: 4;
 }
 /* Figure out how to get the image to fill the entire screen*/
 @media (max-width: 800px) {
