@@ -55,18 +55,6 @@ body {
     height:50%;
 }
 
-/* doesn't scale well */
-/* #circleDash {
-    z-index: 3;
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    top: 49%;
-    left: 44%;
-} */
-
-/* Button Divs */
-
 #test{
     position:absolute;
     top:50%;
@@ -76,11 +64,9 @@ body {
     height:110px;
 }
 
-/* #button {
+.button{
     z-index: 6;
-    width:40px;
-    height:55px;
-} */
+}
 
 /* Figure out how to get the image to fill the entire screen*/
 @media (max-width: 800px) {
