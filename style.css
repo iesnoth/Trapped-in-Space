@@ -49,6 +49,13 @@ body {
 #bottom {
     z-index: 4;
 }
+
+/* #button {
+    z-index: 6;
+    width:40px;
+    height:55px;
+} */
+
 /* Figure out how to get the image to fill the entire screen*/
 @media (max-width: 800px) {
     html {
