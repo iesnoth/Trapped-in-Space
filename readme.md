@@ -1,5 +1,8 @@
 # Unnamed Weird Space Game
 
+## Random Notes (delete later!)
+The button images are very small, need to make bigger
+
 ### A Brief Overview
 Have you ever wondered:
 "What would it be like to be the pilot of a lo-fi 16-bit spaceship, but I still don't know what any of the buttons do?"
@@ -56,6 +59,9 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 **Add more citations later**
 Turning orientation code derived from this conversation: https://css-tricks.com/snippets/css/orientation-lock/, specifically a comment by "Secret"
+
+Button functions inspired by the functions in the JS Web Game by jlboba, git repo here:
+https://github.com/HackerUSA-CE/JS-Web-Game-Part-7.git
 
 All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
 
