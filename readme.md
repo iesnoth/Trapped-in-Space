@@ -2,6 +2,7 @@
 
 ## Random Notes (delete later!)
 The button images are very small, need to make bigger
+Fix TV animation
 
 ### A Brief Overview
 Have you ever wondered:
@@ -53,7 +54,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 ## Bugs
 
-9/25/22 The circle dash doesn't scale well.
+
 
 ## Citations
 
