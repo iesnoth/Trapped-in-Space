@@ -1,30 +1,47 @@
+const buttonArray = [
+//Top Console
+    [
+        //Left panel
+        //Top Row
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(19,-30),
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(23,-19),
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(29,-8),
+        //Bottom Row
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(-44,-74),
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(-40,-64),
+        move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(39,-6),
+        //Circle TV
+        move(newButton('assets/circle-tv/off.png', 'top')).to(-124, 603),
+        move(newButton('assets/circle-tv/off.png', 'top')).to(-62, 606),
+        //Center Panel
+        //top row
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(24, -7),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(30, -7),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(37, -7),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(44, -7),
+        //bottom row
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(-58, -54),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(-52, -54),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(-45, -54),
+        move(newButton('assets/center-switch/off.png', 'center-buttons')).to(40, -18),
+        //Right panel
+        move(newButton('assets/circle-tr/off.png', 'right-buttons')).to(19,-18),
+        move(newButton('assets/circle-tr/off.png', 'right-buttons')).to(30,-29),
+        move(newButton('assets/circle-tr/off.png', 'right-buttons')).to(-33,-49),
+        move(newButton('assets/circle-tr/off.png', 'right-buttons')).to(-23,-60)
+    ],
+    //Bottom Panel
+    [
+        
 
-//Top left panel
-//Top Row
-move(newButton('assets/switch-tl/off.png','top')).to(-210, 640)
-move(newButton('assets/switch-tl/off.png','top')).to(-205, 650)
-move(newButton('assets/switch-tl/off.png','top')).to(-200, 660)
-//Bottom Row
-move(newButton('assets/switch-tl/off.png','top')).to(-274, 595)
-move(newButton('assets/switch-tl/off.png','top')).to(-269, 606)
-move(newButton('assets/switch-tl/off.png','top')).to(-265, 616)
-//Circle TV
-move(newButton('assets/circle-tv/off.png','top')).to(-204,621)
-move(newButton('assets/circle-tv/off.png','top')).to(-135,624)
-//Top Center Panel
-//top row
-move(newButton('assets/center-switch/off.png','center-buttons')).to (24,-7)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (30,-7)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (37,-7)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (44,-7)
-//bottom row
-move(newButton('assets/center-switch/off.png','center-buttons')).to (-58,-54)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (-52,-54)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (-45,-54)
-move(newButton('assets/center-switch/off.png','center-buttons')).to (40,-18)
+    ]
+
+]
+
+const switchArray = []
 
 //makes a new button
-function newButton(url,id) {
+function newButton(url, id) {
     let button = document.createElement('img')
     button.src = url
     button.style.position = 'relative';
