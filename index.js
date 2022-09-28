@@ -31,16 +31,42 @@ const buttonArray = [
         move(newButton('assets/circle-tr/off.png', 'right-buttons')).to(-23, -60)
     ],
     //Bottom Panel
-    []
+    [
+        //top row
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(-3,-5),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(-8,-5),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(-13,-5),
+        //middle row
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(5,4),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(0,4),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(-5,4),
+        //bottom row
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(13,12),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(7,12),
+        move(newButton('assets/keypad-left/up.png', 'keypad')).to(2,12),
+        //Big Squares
+        move(newButton('assets/big-square/up.png', 'big-keys')).to(-21,-7),
+        move(newButton('assets/big-square/up.png', 'big-keys')).to(15,40),
+        move(newButton('assets/big-square/up.png', 'big-keys')).to(-10,49),
+        move(newButton('assets/big-square/up.png', 'big-keys')).to(26,95)
+
+    ]
 ]
 
 const switchArray = [
     [
+        //Bottom left sliders
+        move(newButton('assets/left-slider.png', 'center-left')).to(-14,-81),
+        move(newButton('assets/left-slider.png', 'center-left')).to(-9,-78),
+        move(newButton('assets/left-slider.png', 'center-left')).to(-3,-75),
+        move(newButton('assets/left-slider.png', 'center-left')).to(2,-73),
+        move(newButton('assets/left-slider.png', 'center-left')).to(6,-70),
         //Center throttle
-        move(newButton('assets/center-dial/dial.png', 'center-console')).to(-69,-55),
-        move(newButton('assets/center-dial/dial.png', 'center-console')).to(69,-55),
+        move(newButton('assets/throttle/left.png', 'center-console')).to(15,-120),
+        move(newButton('assets/throttle/right.png', 'center-console')).to(25,-120),
         //center dials
-
+        move(newButton('assets/center-dial/dial.png', 'center-console')).to(-146,-55),
+        move(newButton('assets/center-dial/dial.png', 'center-console')).to(0,-55),
 
     ]
 

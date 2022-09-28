@@ -1,7 +1,6 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
-The button images are very small, need to make bigger
 Fix TV animation
 
 ### A Brief Overview
@@ -53,6 +52,10 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
     2. Photoshop CC
 
 ## Bugs
+9/27/22
+Can't really zoom into game without the buttons going haywire
+
+Buttons move around when crossing browsers
 
 
 
