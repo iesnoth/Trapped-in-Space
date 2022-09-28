@@ -7,6 +7,14 @@ flips a button from one position to another
 plays a noise when a button is pressed
 animates a lever when pressed
 
+So, I want an event listener that changes the image of the button when the button is pressed.
+The button is already created, and has a class of "switch" and value of "off"
+I want to change the value to "on" in case they want to switch it back.
+Some of the buttons look the same, so the same function could work for any of them.
+HOWEVER, I need to make sure they don't all fire at the same time.
+
+I could put all the alike buttons into their own arrays, and choose those for a forEach function, and have the two urls as arguments.
+I would need a different function for the switches.
 
 Function which appends a new image
 function newButton(url){
