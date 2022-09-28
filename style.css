@@ -114,6 +114,16 @@ body {
     bottom: 71px;
 }
 
+#center-right{
+    position: absolute;
+    z-index: 3;
+    width: 250px;
+    height: 250px;
+    left: 72%;
+    top: 118%;
+    transform: translate(-50%, -50%);
+}
+
 .button {
     z-index: 4;
 }

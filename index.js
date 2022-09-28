@@ -11,8 +11,8 @@ const buttonArray = [
         move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(-40, -64),
         move(newButton('assets/switch-tl/off.png', 'left-buttons')).to(39, -6),
         //Circle TV
-        move(newButton('assets/circle-tv/off.png', 'top')).to(-124, 603),
-        move(newButton('assets/circle-tv/off.png', 'top')).to(-62, 606),
+        move(newButton('assets/circle-tv/off.png', 'top')).to(-124, 593),
+        move(newButton('assets/circle-tv/off.png', 'top')).to(-62, 597),
         //Center Panel
         //top row
         move(newButton('assets/center-switch/off.png', 'center-buttons')).to(24, -7),
@@ -32,6 +32,7 @@ const buttonArray = [
     ],
     //Bottom Panel
     [
+        //KEYPAD
         //top row
         move(newButton('assets/keypad-left/up.png', 'keypad')).to(-3,-5),
         move(newButton('assets/keypad-left/up.png', 'keypad')).to(-8,-5),
@@ -48,7 +49,18 @@ const buttonArray = [
         move(newButton('assets/big-square/up.png', 'big-keys')).to(-21,-7),
         move(newButton('assets/big-square/up.png', 'big-keys')).to(15,40),
         move(newButton('assets/big-square/up.png', 'big-keys')).to(-10,49),
-        move(newButton('assets/big-square/up.png', 'big-keys')).to(26,95)
+        move(newButton('assets/big-square/up.png', 'big-keys')).to(26,95),
+        //RIGHT SIDE
+        //toggles
+        move(newButton('assets/toggle-r/up.png', 'center-right')).to(80,-40),
+        move(newButton('assets/toggle-r/up.png', 'center-right')).to(90,-40),
+        move(newButton('assets/toggle-r/up.png', 'center-right')).to(97,-40),
+        //tiny lights
+        move(newButton('assets/tiny-r/off.png', 'center-right')).to(-51,-73),
+        move(newButton('assets/tiny-r/off.png', 'center-right')).to(-20,-75),
+        //knobs with lights
+        move(newButton('assets/knob/off.png', 'center-right')).to(-2,-78),
+        move(newButton('assets/knob/off.png', 'center-right')).to(2,-80)
 
     ]
 ]
