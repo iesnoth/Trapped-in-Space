@@ -1,7 +1,7 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
-Fix TV animation
+
 
 ### A Brief Overview
 Have you ever wondered:
@@ -55,7 +55,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 9/27/22
 Can't really zoom into game without the buttons going haywire
 
-Buttons move around when crossing browsers
+Buttons move around when crossing browsers, have to view in Chrome for best experience
 
 
 
