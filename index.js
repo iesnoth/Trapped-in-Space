@@ -97,10 +97,10 @@ function newButton(url, id) {
 
 
 //give buttons functionality
-function buttonFunction(url) {
-    let button = newButton(url)
+function buttonFunction(url,id) {
+    let button = newButton(url,id)
     //will turn buttons off and on, add function
-    button.addEventListener('click', (url) => {
+    button.addEventListener('click', () => {
         if (button.value == 'off') {
             button.remove()
             newButton(url)

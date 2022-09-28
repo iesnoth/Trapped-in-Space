@@ -1,7 +1,9 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
+Goal for 9/28: figure out how to replace the images onclick dynamically without a lot of extra code.
 
+Stretch goals for game: add a frame which has credits and info pages
 
 ### A Brief Overview
 Have you ever wondered:
