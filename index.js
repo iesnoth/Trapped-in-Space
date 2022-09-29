@@ -78,7 +78,6 @@ const buttonArray = [
 
 ]
 
-
 const switchArray = [
     [
         //Bottom left sliders
@@ -97,7 +96,6 @@ const switchArray = [
     ]
 
 ]
-
 //makes a new button
 function newButton(url, id) {
     let button = document.createElement('img')
@@ -108,6 +106,14 @@ function newButton(url, id) {
     document.getElementById(id).appendChild(button);
     return button
 }
+
+//give them all ids
+// const buttonsId = {
+//     allButtons : document.getElementsByClassName.map('switch'),
+//     for (let i = 0; i < allButtons.length; i++) {
+        
+//       }
+// }
 
 
 //give buttons functionality
