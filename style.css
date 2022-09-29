@@ -26,7 +26,7 @@ body {
 }
 
 #bg {
-    z-index: 1;
+    z-index: 0;
 }
 
 #top {
@@ -34,17 +34,16 @@ body {
     height: 50%;
 }
 
+#bottom {
+    z-index: 1;
+}
+
 #top-bg,
 #bottom-bg,
 #bg {
     width: 100%;
+    pointer-events: none;
 }
-
-#bottom {
-    z-index: 2;
-    height: 50%;
-}
-
 /* Buttons Divs*/
 /* TOP */
 #left-buttons {
@@ -84,21 +83,22 @@ body {
     width: 200px;
     height: 250px;
     left: 30%;
-    top: 118%;
+    top: 76.5%;
     transform: translate(-50%, -50%);
 }
 
 #center-console {
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     width: 200px;
     height: 250px;
     left: 51%;
-    top: 116%;
+    top: 75%;
     transform: translate(-50%, -50%);
 }
 
 #keypad {
+    z-index: 4;
     position: absolute;
     width: 80px;
     height: 80px;
@@ -107,6 +107,7 @@ body {
 }
 
 #big-keys {
+    z-index: 4;
     position: absolute;
     width: 90px;
     height: 80px;
@@ -120,13 +121,13 @@ body {
     width: 250px;
     height: 250px;
     left: 72%;
-    top: 118%;
+    top: 77%;
     transform: translate(-50%, -50%);
 }
 
-.button {
-    z-index: 4;
-}
+/* .switch{
+    z-index: 5;
+} */
 
 /* Figure out how to get the image to fill the entire screen*/
 @media (max-width: 800px) {
