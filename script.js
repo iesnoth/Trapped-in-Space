@@ -1,3 +1,4 @@
+test()
 /*PSUEDO CODE
 
 Basic list of what I'll need:

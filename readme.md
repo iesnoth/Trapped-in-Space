@@ -1,7 +1,8 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
-Goal for 9/28: figure out how to replace the images onclick dynamically without a lot of extra code.
+Goal for 9/29: add ids and figure out how to link different javascript pages,
+use ids and math.random to create a guessing game of doom
 
 Stretch goals for game: add a frame which has credits and info pages
 

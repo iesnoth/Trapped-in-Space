@@ -111,7 +111,7 @@ function newButton(url, id) {
 // const buttonsId = {
 //     allButtons : document.getElementsByClassName.map('switch'),
 //     for (let i = 0; i < allButtons.length; i++) {
-        
+
 //       }
 // }
 
@@ -130,7 +130,6 @@ function buttonFunction(url1, url2, id) {
             e.target.setAttribute('value', 'off')
         }
     })
-    return button
 }
 
 //defines where a button will be
@@ -144,4 +143,8 @@ function move(element) {
     return {
         to: moveTo
     }
+}
+
+function test(){
+    console.log("this is a test")
 }
