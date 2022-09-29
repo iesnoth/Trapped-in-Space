@@ -129,7 +129,9 @@ function buttonFunction(url1, url2, id) {
             e.target.src = url1
             e.target.setAttribute('value', 'off')
         }
+
     })
+    return button
 }
 
 //defines where a button will be
@@ -143,8 +145,4 @@ function move(element) {
     return {
         to: moveTo
     }
-}
-
-function test(){
-    console.log("this is a test")
 }
