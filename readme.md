@@ -4,6 +4,8 @@
 Goal for 9/29: add ids and figure out how to link different javascript pages,
 use ids and math.random to create a guessing game of doom
 
+FIGURE OUT HOW TO MOVE SWITCHES
+
 Stretch goals for game: add a frame which has credits and info pages
 
 ### A Brief Overview
