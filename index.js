@@ -81,78 +81,18 @@ const buttonArray = [
 const switchArray = [
     [
         //Bottom left sliders
-        move(newButton('assets/left-slider.png', 'center-left')).to(-14, -81),
-        move(newButton('assets/left-slider.png', 'center-left')).to(-9, -78),
-        move(newButton('assets/left-slider.png', 'center-left')).to(-3, -75),
-        move(newButton('assets/left-slider.png', 'center-left')).to(2, -73),
-        move(newButton('assets/left-slider.png', 'center-left')).to(6, -70),
+        move(newButton('assets/left-slider.png', 'center-left',41)).to(-14, -81),
+        move(newButton('assets/left-slider.png', 'center-left',42)).to(-9, -78),
+        move(newButton('assets/left-slider.png', 'center-left',43)).to(-3, -75),
+        move(newButton('assets/left-slider.png', 'center-left',44)).to(2, -73),
+        move(newButton('assets/left-slider.png', 'center-left',45)).to(6, -70),
         //Center throttle
-        move(newButton('assets/throttle/left.png', 'center-console')).to(15, -120),
-        move(newButton('assets/throttle/right.png', 'center-console')).to(25, -120),
+        move(newButton('assets/throttle/left.png', 'center-console',46)).to(15, -120),
+        move(newButton('assets/throttle/right.png', 'center-console',47)).to(25, -120),
         //center dials
-        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console')).to(-146, -55),
-        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console')).to(0, -55),
+        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',48)).to(-146, -55),
+        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',49)).to(0, -55),
 
     ]
 
 ]
-//makes a new button
-// function newButton(url, id, id2) {
-//     let button = document.createElement('img')
-//     button.src = url
-//     button.style.position = 'relative';
-//     button.setAttribute('class', 'switch');
-//     button.setAttribute('value', 'off');
-//     button.setAttribute('id', id2);
-//     document.getElementById(id).appendChild(button);
-//     return button
-// }
-
-// //give buttons functionality
-// function buttonFunction(url1, url2, id, id2) {
-//     let button = newButton(url1, id, id2)
-//     //will turn buttons off and on, add function
-//     button.addEventListener('click', (e) => {
-//         if (e.target.getAttribute("value") == "off") {
-//             e.target.src = url2
-//             e.target.setAttribute('value', 'on')
-//         }
-//         else {
-//             e.target.src = url1
-//             e.target.setAttribute('value', 'off')
-//         }
-
-//     })
-//     return button
-// }
-
-// //give switches function
-// // function buttonFunction(url1, url2, id, id2) {
-// //     let button = newButton(url1, id, id2)
-// //     //will turn buttons off and on, add function
-// //     button.addEventListener('click', (e) => {
-// //         if (e.target.getAttribute("value") == "off") {
-// //             move(e.target).to(10,10)
-// //             e.target.setAttribute('value', 'on')
-// //         }
-// //         else {
-// //             e.target.src = url1
-// //             e.target.setAttribute('value', 'off')
-// //         }
-
-// //     })
-// //     return button
-// // }
-
-// //defines where a button will be
-// function move(element) {
-
-//     function moveTo(left, bottom) {
-//         element.style.left = left + 'px'
-//         element.style.bottom = bottom + 'px'
-//     }
-
-//     return {
-//         to: moveTo
-//     }
-// }
