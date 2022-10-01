@@ -61,7 +61,8 @@ Can't really zoom into game without the buttons going haywire
 
 Buttons move around when crossing browsers, have to view in Chrome for best experience
 
-
+10/1/22
+Throttle isn't perfectly aligned.
 
 ## Citations
 

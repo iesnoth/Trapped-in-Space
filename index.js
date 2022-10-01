@@ -81,14 +81,14 @@ const buttonArray = [
 const switchArray = [
     [
         //Bottom left sliders
-        move(newButton('assets/left-slider.png', 'center-left',41)).to(-14, -81),
-        move(newButton('assets/left-slider.png', 'center-left',42)).to(-9, -78),
-        move(newButton('assets/left-slider.png', 'center-left',43)).to(-3, -75),
-        move(newButton('assets/left-slider.png', 'center-left',44)).to(2, -73),
-        move(newButton('assets/left-slider.png', 'center-left',45)).to(6, -70),
+        move(buttonFunction('assets/slider/slider-down.png', 'assets/slider/slider-up.png', 'center-left',41)).to(-8, -63),
+        move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',42)).to(-7, -60),
+        move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',43)).to(-6, -58),
+        move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',44)).to(-5, -54),
+        move(buttonFunction('assets/slider/slider-down.png', 'assets/slider/slider-up.png', 'center-left', 45)).to(-5, -52),
         //Center throttle
-        move(newButton('assets/throttle/left.png', 'center-console','throttle-left')).to(15, -120),
-        move(newButton('assets/throttle/right.png', 'center-console','throttle-right')).to(25, -120),
+        move(buttonFunction('assets/throttle/left.png','assets/throttle/left-up.png', 'center-console','throttle-left')).to(18, -122),
+        move(buttonFunction('assets/throttle/right.png','assets/throttle/right-up.png', 'center-console','throttle-right')).to(21, -120),
         //center dials
         move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',46)).to(-146, -55),
         move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',47)).to(0, -55),
