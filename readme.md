@@ -1,9 +1,7 @@
-# Unnamed Weird Space Game
+# Trapped in Space Game
 
 ## Random Notes (delete later!)
 Stretch goals for game: add a frame which has credits and info pages
-
-Check out later: https://www.w3schools.com/howto/howto_js_popup.asp
 
 ### A Brief Overview
 Have you ever wondered:
@@ -61,7 +59,7 @@ Buttons move around when crossing browsers, have to view in Chrome for best expe
 10/1/22
 Throttle isn't perfectly aligned.
 
-## New Things Learned
+## New Things I Learned
 - math.random
 - the includes keyword
 - how to take elements out of an array
