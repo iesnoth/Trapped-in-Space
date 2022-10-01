@@ -1,0 +1,37 @@
+html {
+    background-color: rgb(20, 10, 58);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#container {
+    position: relative;
+    width: 1000px;
+    height: 667px;
+    margin: 50px;
+}
+
+#red-console,
+#sky
+{
+    position: fixed;
+    width: 1000px;
+    height: auto
+}
+
+#you-lose,
+#bg
+{
+    width: 100%;
+    pointer-events: none;
+}
+
+#red-console{
+    z-index: 2
+}
