@@ -87,11 +87,11 @@ const switchArray = [
         move(newButton('assets/left-slider.png', 'center-left',44)).to(2, -73),
         move(newButton('assets/left-slider.png', 'center-left',45)).to(6, -70),
         //Center throttle
-        move(newButton('assets/throttle/left.png', 'center-console',46)).to(15, -120),
-        move(newButton('assets/throttle/right.png', 'center-console',47)).to(25, -120),
+        move(newButton('assets/throttle/left.png', 'center-console','throttle-left')).to(15, -120),
+        move(newButton('assets/throttle/right.png', 'center-console','throttle-right')).to(25, -120),
         //center dials
-        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',48)).to(-146, -55),
-        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',49)).to(0, -55),
+        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',46)).to(-146, -55),
+        move(buttonFunction('assets/center-dial/dial.png', 'assets/center-dial/turn.png', 'center-console',47)).to(0, -55),
 
     ]
 
