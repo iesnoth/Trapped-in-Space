@@ -5,6 +5,8 @@ FIGURE OUT HOW TO MOVE SWITCHES
 
 Stretch goals for game: add a frame which has credits and info pages
 
+Check out later: https://www.w3schools.com/howto/howto_js_popup.asp
+
 ### A Brief Overview
 Have you ever wondered:
 "What would it be like to be the pilot of a lo-fi 16-bit spaceship, but I still don't know what any of the buttons do?"

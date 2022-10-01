@@ -7,7 +7,7 @@ function doom() {
     console.log(myVar.doomNumber)
     return myVar.doomLink
 }
-doom()
+//doom()
 //makes the number whose id matches the doomNumber the self-destruct button
 // function destructButton(doom){
 //     doom();
@@ -26,14 +26,22 @@ doom()
 // }
 
 
-function destructButton() {
+function destructButton(doom,restart) {
+    doom()
     let element = document.getElementById(myVar.doomNumber);
     element.addEventListener('click', () => {
-        window.alert('You lose.')
+        window.location.href = 'doom.html'
+        // myVar.screen = window.location.href
+        restart()
+
     })
 }
+destructButton(doom)
 
-
-destructButton()
+//sends player back to homepage
+function restart() {
+    alert('You lose. Try again?');
+    window.location = "index.html";
+}
 
 //function which unlocks the throttle when certain buttons are pushed in a certain order
