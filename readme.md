@@ -33,16 +33,15 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 - **So Many Buttons:**
     The big draw of the game is to play with a lot of buttons. None of them are labelled, and it's not obvious what any of them should do. "Low key frustration" is the mood I'm going for.
-        - However, there are a couple puzzles where the buttons light up, suggesting they might have a sequence.
         - Half of them will just make a funny noise.
         - Each button has at least an *on* and *off* position.
     
     The coding goal is to have a few functions which work for every button, then some specialized events.
 
 - **Animations:**
-    There will be some animations for figuring out complicated puzzles, or losing. I'd also like to add ambient animation (example: flickering lights) if I have time and space (haha).
+    There will be some animations for figuring out complicated puzzles, or losing. I'd also like to add ambient animation (example: flickering lights).
 
-- **Note-taking:** A feature I'd like to add but not sure if I'll have time. Like I said, none of the buttons are labelled. But I'd like to give the players a way to take notes in-game. This is a stretch goal of sorts.
+- **Note-taking:** A feature I'd like to add but not sure if I'll have time. Like I said, none of the buttons are labelled. But I'd like to give the players a way to take notes in-game. This is a stretch goal.
 
 - **Languages**
     1. HTML
@@ -62,15 +61,24 @@ Buttons move around when crossing browsers, have to view in Chrome for best expe
 10/1/22
 Throttle isn't perfectly aligned.
 
+## New Things Learned
+- math.random
+- the includes keyword
+- how to take elements out of an array
+- some about "in" though I'm still not 100% on that
+
 ## Citations
 
-**Add more citations later**
 -"Secret"'s comment on this conversation https://css-tricks.com/snippets/css/orientation-lock/ helped with turning orientation code.
 
 -JS Web Game by _jlboba_ inspired the button functions, git repo here:
 https://github.com/HackerUSA-CE/JS-Web-Game-Part-7.git
 
 -W3Schools taught me about shake animation: https://www.w3schools.com/howto/howto_css_shake_image.asp
+
+-Matthew Telles aided greatly in the writing of the checkSolution function
+
+-AmerllicA's comment on this stack overflow conversation clarified taking an element from an array: https://stackoverflow.com/questions/3954438/how-to-remove-item-from-array-by-value
 
 -All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
 

@@ -1,7 +1,11 @@
 
 const myVar = {
-    pressedKeys : [],
+    pressedKeys: [],
+    keypad: document.querySelector('#keypad'),
+    keys: this.keypad.children,
+    solution: ['21', '23', '25', '27', '29']
 }
+
 //function chooses a random button
 function doom() {
     myVar.doomNumber = Math.floor(Math.random() * 47) + 1;
@@ -10,22 +14,37 @@ function doom() {
     return myVar.doomLink
 }
 
-//makes an array of the ids in the keypad
-// function openThrottle(){
-//     buttonArray[4].map()
+//check solution array against pressedKeys array
+function checkSolution() {
+    solved = true
+    for (var i = 0; i < myVar.solution.length; i++) {
+        value = myVar.solution[i]
+        if (!myVar.pressedKeys.includes(value)) { solved = false }
+    }
+    for (var i = 0; i < myVar.pressedKeys.length; i++) {
+        value = myVar.pressedKeys[i]
+        if (!myVar.solution.includes(value)) { solved = false }
+    }
+    if (solved) {
+        console.log('Solved!')
+    }
+    else {
+        console.log('not solved')
+    }
+}
+
+//unlocks the throttle
+//
+// function unlock(){
+//     move(buttonFunction('assets/throttle/left.png','assets/throttle/left-up.png', 'center-console','throttle-left')).to(18, -122),
+//     move(buttonFunction('assets/throttle/right.png','assets/throttle/right-up.png', 'center-console','throttle-right')).to(21, -120),
 // }
-// openThrottle()
 
-//onclick of a keypad button, the id should be saved to the pressedKeys array
-//add another function that takes the id OUT OF the array if it is un-pressed
-
-function destructButton(doom,restart) {
+function destructButton(doom) {
     doom()
     let element = document.getElementById(myVar.doomNumber);
     element.addEventListener('click', () => {
         window.location.href = 'doom.html'
-        // myVar.screen = window.location.href
-        restart()
 
     })
 }

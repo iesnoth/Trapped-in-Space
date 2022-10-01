@@ -19,15 +19,26 @@ function buttonFunction(url1, url2, id, id2) {
         if (e.target.getAttribute("value") == "off") {
             e.target.src = url2
             e.target.setAttribute('value', 'on')
+            if (e.target.id >= 21 && e.target.id <= 29) {
+                myVar.pressedKeys.push(e.target.id)
+                //console.log(myVar.pressedKeys)
+            }
         }
         else {
             e.target.src = url1
             e.target.setAttribute('value', 'off')
+            if (e.target.id >= 21 && e.target.id <= 29) {
+                myVar.pressedKeys.indexOf(e.target.id) !== -1 && myVar.pressedKeys.splice(myVar.pressedKeys.indexOf(e.target.id), 1)
+                //console.log(myVar.pressedKeys)
+            }
         }
-
+        checkSolution()
     })
     return button
 }
+
+
+
 
 //give switches function
 // function buttonFunction(url1, url2, id, id2) {
