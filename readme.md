@@ -1,9 +1,6 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
-Goal for 9/29: add ids and figure out how to link different javascript pages,
-use ids and math.random to create a guessing game of doom
-
 FIGURE OUT HOW TO MOVE SWITCHES
 
 Stretch goals for game: add a frame which has credits and info pages
@@ -67,12 +64,14 @@ Buttons move around when crossing browsers, have to view in Chrome for best expe
 ## Citations
 
 **Add more citations later**
-Turning orientation code derived from this conversation: https://css-tricks.com/snippets/css/orientation-lock/, specifically a comment by "Secret"
+-"Secret"'s comment on this conversation https://css-tricks.com/snippets/css/orientation-lock/ helped with turning orientation code.
 
-Button functions inspired by the functions in the JS Web Game by jlboba, git repo here:
+-JS Web Game by _jlboba_ inspired the button functions, git repo here:
 https://github.com/HackerUSA-CE/JS-Web-Game-Part-7.git
 
-All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
+-W3Schools taught me about shake animation: https://www.w3schools.com/howto/howto_css_shake_image.asp
+
+-All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
 
 ## Licensing
 

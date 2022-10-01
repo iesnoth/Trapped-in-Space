@@ -133,13 +133,9 @@ body {
 @media (max-width: 800px) {
     html {
         transform: rotate(90deg);
-        transform-origin: right top;
         width: 100vh;
         height: 100vw;
-        /* overflow-x: hidden; NOT SURE WHAT THIS DOES*/
         position: absolute;
-        top: 100%;
-        right: 0;
 
     }
 
