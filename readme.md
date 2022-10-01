@@ -1,8 +1,6 @@
 # Unnamed Weird Space Game
 
 ## Random Notes (delete later!)
-FIGURE OUT HOW TO MOVE SWITCHES
-
 Stretch goals for game: add a frame which has credits and info pages
 
 Check out later: https://www.w3schools.com/howto/howto_js_popup.asp
