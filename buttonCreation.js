@@ -36,6 +36,13 @@ function buttonFunction(url1, url2, id, id2) {
 }
 
 
+//BUG DETANGLING
+//newButton is called in throttleFunction which has eventListeners for clicks.
+//Those clicks come from buttons made by buttonFunction which calls checkSolution.
+//checkSolution gets its information from buttonFunction, and is called in buttonFunction.
+//checkSolution calls unlock() if certain parameters are met.
+//I think the problem might come from the buttonFunc and throttleFunc being connected.
+
 //specifically for the throttle
 
 function throttleFunction(url1, url2, id, id2) {
@@ -55,12 +62,6 @@ function throttleFunction(url1, url2, id, id2) {
     return button
 }
 
-function unlock() {
-    let throttleLeft = document.getElementbyId('throttle-left')
-    throttleLeft.setAttribute('value','on')
-    let throttleRight = document.getElementbyId('throttle-right')
-    throttleRight.setAttribute('value','on')
-}
 
 
 // function warpSpeed(){
