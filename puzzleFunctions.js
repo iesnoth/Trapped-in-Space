@@ -16,29 +16,34 @@ function doom() {
 
 //check solution array against pressedKeys array
 function checkSolution() {
-    solved = true
+    myVar.solved = true;
     for (var i = 0; i < myVar.solution.length; i++) {
         value = myVar.solution[i]
-        if (!myVar.pressedKeys.includes(value)) { solved = false }
+        if (!myVar.pressedKeys.includes(value)) { myVar.solved = false }
     }
     for (var i = 0; i < myVar.pressedKeys.length; i++) {
         value = myVar.pressedKeys[i]
-        if (!myVar.solution.includes(value)) { solved = false }
+        if (!myVar.solution.includes(value)) { myVar.solved = false }
     }
-    if (solved) {
-        unlock()
+    if (myVar.solved) {
+        //unlock()
+        console.log(myVar.solved)
+        return myVar.solved
     }
     else {
-        console.log('not solved')
+        console.log('not solved');
     }
+
 }
 
 //unlocks the throttle
 //
-function unlock() {
-    let throttles = document.getElementsByClassName('throttle')
-    throttles.setAttribute('value','open')
-}
+// function unlock() {
+//     let throttleLeft = document.getElementbyId('throttle-left');
+//     throttleLeft.setAttribute('value','on');
+//     let throttleRight = document.getElementbyId('throttle-right');
+//     throttleRight.setAttribute('value','on');
+// }
 
 
 

@@ -40,42 +40,33 @@ function buttonFunction(url1, url2, id, id2) {
 
 function throttleFunction(url1, url2, id, id2) {
     let button = newButton(url1, id, id2)
+    //might need to delete this
     button.setAttribute('class','throttle')
     //will turn buttons off and on, add function
     button.addEventListener('click', (e) => {
-        if (e.target.getAttribute("value") == "off") {
-            e.target.setAttribute('value','on')
+        if (e.target.getAttribute("value") == "on") {
+            e.target.setAttribute('value','locked')
             e.target.src = url2
         }
-        else if(e.target.getAttribute("value") == "on"){
+        else if(e.target.getAttribute("value") == "locked"){
             window.alert(`We're out of fuel, genius.`)
         }
     })
     return button
 }
 
-function unlockThrottle(){
-    //if the value is open, 
+function unlock() {
+    let throttleLeft = document.getElementbyId('throttle-left')
+    throttleLeft.setAttribute('value','on')
+    let throttleRight = document.getElementbyId('throttle-right')
+    throttleRight.setAttribute('value','on')
 }
 
 
-//give switches function
-// function buttonFunction(url1, url2, id, id2) {
-//     let button = newButton(url1, id, id2)
-//     //will turn buttons off and on, add function
-//     button.addEventListener('click', (e) => {
-//         if (e.target.getAttribute("value") == "off") {
-//             move(e.target).to(10,10)
-//             e.target.setAttribute('value', 'on')
-//         }
-//         else {
-//             e.target.src = url1
-//             e.target.setAttribute('value', 'off')
-//         }
-
-//     })
-//     return button
+// function warpSpeed(){
+//     let warpNeeds = document.getElementsByClassName('throttle')
 // }
+
 
 //defines where a button will be
 function move(element) {
@@ -89,12 +80,3 @@ function move(element) {
         to: moveTo
     }
 }
-
-// return{
-//     move:move,
-//     newButton:newButton,
-//     buttonFunction:buttonFunction
-// }
-
-// }
-// makeButtons()
