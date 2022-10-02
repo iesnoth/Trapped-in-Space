@@ -24,6 +24,9 @@ function buttonFunction(url1, url2, id, id2) {
             if (e.target.id >= 21 && e.target.id <= 29) {
                 myVar.pressedKeys.push(e.target.id)
             }
+            else if (e.target.id >= 9 && e.target.id <= 16) {
+                myVar.abbaPressedKeys.push(e.target.id)
+            }
         }
         else {
             e.target.src = url1
@@ -31,9 +34,12 @@ function buttonFunction(url1, url2, id, id2) {
             if (e.target.id >= 21 && e.target.id <= 29) {
                 myVar.pressedKeys.indexOf(e.target.id) !== -1 && myVar.pressedKeys.splice(myVar.pressedKeys.indexOf(e.target.id), 1)
             }
+            else if (e.target.id >= 9 && e.target.id <= 16) {
+                myVar.abbaPressedKeys.indexOf(e.target.id) !== -1 && myVar.abbaPressedKeys.splice(myVar.abbaPressedKeys.indexOf(e.target.id), 1)
+            }
         }
         checkSolution()
-        return solved
+        //checkSolutionAbba()
     })
     return button
 }
@@ -51,14 +57,14 @@ function buttonFunction(url1, url2, id, id2) {
 function throttleFunction(url1, url2, id, id2) {
     let button = newButton(url1, id, id2)
     //might need to delete this
-    button.setAttribute('class','throttle')
+    button.setAttribute('class', 'throttle')
     //will turn buttons off and on, add function
     button.addEventListener('click', (e) => {
         if (e.target.getAttribute("value") == "on") {
-            e.target.setAttribute('value','locked')
+            e.target.setAttribute('value', 'locked')
             e.target.src = url2
         }
-        else if(e.target.getAttribute("value") == "locked"){
+        else if (e.target.getAttribute("value") == "locked") {
             window.alert(`We're out of fuel, genius.`)
         }
     })

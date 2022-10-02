@@ -3,7 +3,10 @@ const myVar = {
     pressedKeys: [],
     keypad: document.querySelector('#keypad'),
     keys: this.keypad.children,
-    solution: ['21', '23', '25', '27', '29']
+    padSolution: ['21', '23', '25', '27', '29'],
+    abbaPressedKeys: [],
+    abbaSolution: ['9', '11', '13', '15']
+
 }
 
 //function chooses a random button
@@ -14,37 +17,32 @@ function doom() {
     return myVar.doomLink
 }
 
-//check solution array against pressedKeys array
+//check padSolution array against pressedKeys array
 function checkSolution() {
     solved = true;
-    for (var i = 0; i < myVar.solution.length; i++) {
-        value = myVar.solution[i]
+    for (var i = 0; i < myVar.padSolution.length; i++) {
+        value = myVar.padSolution[i]
         if (!myVar.pressedKeys.includes(value)) { solved = false }
     }
     for (var i = 0; i < myVar.pressedKeys.length; i++) {
         value = myVar.pressedKeys[i]
-        if (!myVar.solution.includes(value)) { solved = false }
+        if (!myVar.padSolution.includes(value)) { solved = false }
     }
     if (solved) {
-        myVar.open = solved
-        console.log(myVar.open)
+        console.log(solved)
+        unlock()
     }
     else {
         console.log('not solved');
     }
-    return myVar.open
+
 }
 
-
 //unlocks the throttle
-//nit sure where to call this where it will work
+//not sure where to call this where it will work
 function unlock() {
-    if (myVar.open == true) {
-        let throttleLeft = document.getElementbyId('throttle-left');
-        throttleLeft.setAttribute('value', 'on');
-        let throttleRight = document.getElementbyId('throttle-right');
-        throttleRight.setAttribute('value', 'on');
-    }
+    document.getElementById('throttle-left').setAttribute('value','on')
+    document.getElementById('throttle-right').setAttribute('value','on')
 }
 
 
@@ -58,3 +56,25 @@ function destructButton(doom) {
     })
 }
 destructButton(doom)
+
+
+//***********abba puzzle */
+//check abbaSolution against abbaPressed Keys
+// function checkSolutionAbba() {
+//     solvedAbba = true;
+//     for (var i = 0; i < myVar.abbaSolution.length; i++) {
+//         value = myVar.abbaSolution[i]
+//         if (!myVar.abbaPressedKeys.includes(value)) { solved = false }
+//     }
+//     for (var i = 0; i < myVar.abbaPressedKeys.length; i++) {
+//         value = myVar.abbaPressedKeys[i]
+//         if (!myVar.abbaSolution.includes(value)) { solved = false }
+//     }
+//     if (solvedAbba) {
+//         console.log('solvedAbba')
+//     }
+//     else {
+//         console.log('not solved');
+//     }
+
+// }
