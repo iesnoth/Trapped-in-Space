@@ -26,30 +26,26 @@ function checkSolution() {
         if (!myVar.solution.includes(value)) { solved = false }
     }
     if (solved) {
-        console.log('finished')
-        
+        myVar.open = solved
+        console.log(myVar.open)
     }
     else {
         console.log('not solved');
     }
-
+    return myVar.open
 }
 
-function unlock() {
-    let throttleLeft = document.getElementbyId('throttle-left')
-    throttleLeft.setAttribute('value','on')
-    let throttleRight = document.getElementbyId('throttle-right')
-    throttleRight.setAttribute('value','on')
-}
 
 //unlocks the throttle
-//
-// function unlock() {
-//     let throttleLeft = document.getElementbyId('throttle-left');
-//     throttleLeft.setAttribute('value','on');
-//     let throttleRight = document.getElementbyId('throttle-right');
-//     throttleRight.setAttribute('value','on');
-// }
+//nit sure where to call this where it will work
+function unlock() {
+    if (myVar.open == true) {
+        let throttleLeft = document.getElementbyId('throttle-left');
+        throttleLeft.setAttribute('value', 'on');
+        let throttleRight = document.getElementbyId('throttle-right');
+        throttleRight.setAttribute('value', 'on');
+    }
+}
 
 
 

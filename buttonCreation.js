@@ -11,6 +11,8 @@ function newButton(url, id, id2) {
     return button
 }
 
+
+
 //give buttons functionality
 function buttonFunction(url1, url2, id, id2) {
     let button = newButton(url1, id, id2)
@@ -31,17 +33,18 @@ function buttonFunction(url1, url2, id, id2) {
             }
         }
         checkSolution()
+        return solved
     })
     return button
 }
-
 
 //BUG DETANGLING
 //newButton is called in throttleFunction which has eventListeners for clicks.
 //Those clicks come from buttons made by buttonFunction which calls checkSolution.
 //checkSolution gets its information from buttonFunction, and is called in buttonFunction.
 //checkSolution calls unlock() if certain parameters are met.
-//I think the problem might come from the buttonFunc and throttleFunc being connected.
+//unlock() affects the throttleFunction
+//I think the problem might come from the buttonFunc and throttleFunc being connected, or when things are being called
 
 //specifically for the throttle
 
