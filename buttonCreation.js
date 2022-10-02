@@ -21,7 +21,6 @@ function buttonFunction(url1, url2, id, id2) {
             e.target.setAttribute('value', 'on')
             if (e.target.id >= 21 && e.target.id <= 29) {
                 myVar.pressedKeys.push(e.target.id)
-                //console.log(myVar.pressedKeys)
             }
         }
         else {
@@ -29,7 +28,6 @@ function buttonFunction(url1, url2, id, id2) {
             e.target.setAttribute('value', 'off')
             if (e.target.id >= 21 && e.target.id <= 29) {
                 myVar.pressedKeys.indexOf(e.target.id) !== -1 && myVar.pressedKeys.splice(myVar.pressedKeys.indexOf(e.target.id), 1)
-                //console.log(myVar.pressedKeys)
             }
         }
         checkSolution()
@@ -38,6 +36,27 @@ function buttonFunction(url1, url2, id, id2) {
 }
 
 
+//specifically for the throttle
+
+function throttleFunction(url1, url2, id, id2) {
+    let button = newButton(url1, id, id2)
+    button.setAttribute('class','throttle')
+    //will turn buttons off and on, add function
+    button.addEventListener('click', (e) => {
+        if (e.target.getAttribute("value") == "off") {
+            e.target.setAttribute('value','on')
+            e.target.src = url2
+        }
+        else if(e.target.getAttribute("value") == "on"){
+            window.alert(`We're out of fuel, genius.`)
+        }
+    })
+    return button
+}
+
+function unlockThrottle(){
+    //if the value is open, 
+}
 
 
 //give switches function
