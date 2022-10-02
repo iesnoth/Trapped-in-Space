@@ -27,10 +27,7 @@ function checkSolution() {
     }
     if (solved) {
         console.log('finished')
-        let throttleLeft = document.getElementbyId('throttle-left')
-        throttleLeft.setAttribute('value','on')
-        let throttleRight = document.getElementbyId('throttle-right')
-        throttleRight.setAttribute('value','on')
+        
     }
     else {
         console.log('not solved');
@@ -38,12 +35,12 @@ function checkSolution() {
 
 }
 
-// function unlock() {
-    // let throttleLeft = document.getElementbyId('throttle-left')
-    // throttleLeft.setAttribute('value','on')
-    // let throttleRight = document.getElementbyId('throttle-right')
-    // throttleRight.setAttribute('value','on')
-// }
+function unlock() {
+    let throttleLeft = document.getElementbyId('throttle-left')
+    throttleLeft.setAttribute('value','on')
+    let throttleRight = document.getElementbyId('throttle-right')
+    throttleRight.setAttribute('value','on')
+}
 
 //unlocks the throttle
 //
@@ -56,19 +53,6 @@ function checkSolution() {
 
 
 
-// let div = document.getElementById('center-console');
-// let locked = document.getElementById('throttle-left');
-// div.removeChild(locked);
-// let throttleLeft = move(buttonFunction('assets/throttle/left.png', 'assets/throttle/left-up.png', 'center-console', 'throttle-left-open')).to(21,-120);
-// div.appendChild(throttleLeft);
-// let lockedRight = document.getElementById('throttle-right');
-// div.removeChild(lockedRight);
-// let throttleRight = move(buttonFunction('assets/throttle/right.png', 'assets/throttle/right-up.png', 'center-console', 'throttle-right-open')).to(18, -122);
-// div.appendChild(throttleRight);
-// console.log("unlocked!")
-
-
-
 function destructButton(doom) {
     doom()
     let element = document.getElementById(myVar.doomNumber);
@@ -78,9 +62,3 @@ function destructButton(doom) {
     })
 }
 destructButton(doom)
-
-//sends player back to homepage
-function restart() {
-    alert('You lose. Try again?');
-    window.location = "index.html";
-}
