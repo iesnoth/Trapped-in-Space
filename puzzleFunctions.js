@@ -39,12 +39,23 @@ function checkSolution() {
 }
 
 //unlocks the throttle
-//not sure where to call this where it will work
 function unlock() {
     document.getElementById('throttle-left').setAttribute('value','on')
     document.getElementById('throttle-right').setAttribute('value','on')
 }
 
+function warpSpeed() {
+        background = document.getElementById('bg');
+        background.src = 'assets/warp.gif';
+        setTimeout(() =>{
+            changeBg(FILL IN)
+        },4000)
+}
+
+function changeBg(url) {
+    background = document.getElementById('bg')
+    background.src = url
+}
 
 
 function destructButton(doom) {

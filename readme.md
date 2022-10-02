@@ -69,6 +69,8 @@ Throttle was working, but now isn't and I'm not sure why. Might need to async/aw
 
 ## Citations
 
+-Special thanks to JD Howell, who helped me with debugging.
+
 -"Secret"'s comment on this conversation https://css-tricks.com/snippets/css/orientation-lock/ helped with turning orientation code.
 
 -JS Web Game by _jlboba_ inspired the button functions, git repo here:

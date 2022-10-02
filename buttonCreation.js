@@ -44,14 +44,6 @@ function buttonFunction(url1, url2, id, id2) {
     return button
 }
 
-//BUG DETANGLING
-//newButton is called in throttleFunction which has eventListeners for clicks.
-//Those clicks come from buttons made by buttonFunction which calls checkSolution.
-//checkSolution gets its information from buttonFunction, and is called in buttonFunction.
-//checkSolution calls unlock() if certain parameters are met.
-//unlock() affects the throttleFunction
-//I think the problem might come from the buttonFunc and throttleFunc being connected, or when things are being called
-
 //specifically for the throttle
 
 function throttleFunction(url1, url2, id, id2) {
@@ -61,8 +53,12 @@ function throttleFunction(url1, url2, id, id2) {
     //will turn buttons off and on, add function
     button.addEventListener('click', (e) => {
         if (e.target.getAttribute("value") == "on") {
-            e.target.setAttribute('value', 'locked')
+            e.target.setAttribute('value', 'warp')
             e.target.src = url2
+        }
+        else if(e.target.getAttribute("value") == 'warp'){
+            warpSpeed()
+            e.target.setAttribute('value','locked')
         }
         else if (e.target.getAttribute("value") == "locked") {
             window.alert(`We're out of fuel, genius.`)
@@ -70,12 +66,6 @@ function throttleFunction(url1, url2, id, id2) {
     })
     return button
 }
-
-
-
-// function warpSpeed(){
-//     let warpNeeds = document.getElementsByClassName('throttle')
-// }
 
 
 //defines where a button will be
