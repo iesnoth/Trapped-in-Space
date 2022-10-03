@@ -5,7 +5,8 @@ const myVar = {
     keys: this.keypad.children,
     padSolution: ['21', '23', '25', '27', '29'],
     abbaPressedKeys: [],
-    abbaSolution: ['9', '11', '13', '15']
+    abbaSolution: ['9', '11', '13', '15'],
+    audio:new Audio('assets/abba.mp3')
 
 }
 
@@ -44,6 +45,7 @@ function unlock() {
     document.getElementById('throttle-right').setAttribute('value','on')
 }
 
+//uses changebg function to go to warp speed when throttle is thrown
 function warpSpeed() {
         background = document.getElementById('bg');
         if(background.src = 'assets/sky.gif')
@@ -60,13 +62,14 @@ function warpSpeed() {
         }
 }
 
+//changes the background
 function changeBg(url) {
     background = document.getElementById('bg')
     background.src = url
 }
 
-
-function destructButton(doom) {
+//sends user to the doom window
+function destructButton() {
     doom()
     let element = document.getElementById(myVar.doomNumber);
     element.addEventListener('click', () => {
@@ -74,26 +77,28 @@ function destructButton(doom) {
 
     })
 }
-destructButton(doom)
+destructButton()
 
 
 //***********abba puzzle */
 //check abbaSolution against abbaPressed Keys
-// function checkSolutionAbba() {
-//     solvedAbba = true;
-//     for (var i = 0; i < myVar.abbaSolution.length; i++) {
-//         value = myVar.abbaSolution[i]
-//         if (!myVar.abbaPressedKeys.includes(value)) { solved = false }
-//     }
-//     for (var i = 0; i < myVar.abbaPressedKeys.length; i++) {
-//         value = myVar.abbaPressedKeys[i]
-//         if (!myVar.abbaSolution.includes(value)) { solved = false }
-//     }
-//     if (solvedAbba) {
-//         console.log('solvedAbba')
-//     }
-//     else {
-//         console.log('not solved');
-//     }
 
-// }
+function checkSolutionAbba() {
+    solvedAbba = true;
+    for (var i = 0; i < myVar.abbaSolution.length; i++) {
+        value = myVar.abbaSolution[i]
+        if (!myVar.abbaPressedKeys.includes(value)) { solvedAbba = false }
+    }
+    for (var i = 0; i < myVar.abbaPressedKeys.length; i++) {
+        value = myVar.abbaPressedKeys[i]
+        if (!myVar.abbaSolution.includes(value)) { solvedAbba = false }
+    }
+    if (solvedAbba) {
+        myVar.audio.play();
+    }
+    else {
+        myVar.audio.pause();
+        console.log('not solved');
+    }
+
+}

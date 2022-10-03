@@ -60,7 +60,8 @@ Buttons move around when crossing browsers, have to view in Chrome for best expe
 Throttle isn't perfectly aligned.
 
 10/2/22
-After finishing the keypad puzzle, you have to click the throttle a few times to warp.
+- After finishing the keypad puzzle, you have to click the throttle a few times to warp.
+- If you go to the planet background before hitting the self destruct, the old bg will be on the doom page.
 
 ## New Things I Learned
 - math.random

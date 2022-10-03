@@ -39,10 +39,12 @@ function buttonFunction(url1, url2, id, id2) {
             }
         }
         checkSolution()
-        //checkSolutionAbba()
+        checkSolutionAbba()
     })
     return button
 }
+
+
 
 //specifically for the throttle
 
