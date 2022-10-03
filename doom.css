@@ -81,3 +81,17 @@ body {
         transform: translate(1px, -2px) rotate(-1deg);
     }
 }
+
+#border-div{
+    z-index: 6;
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    bottom: -15%;
+    left:-10%
+}
+
+#border {
+    width: 100%;
+    pointer-events: none;
+}

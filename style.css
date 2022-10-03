@@ -19,7 +19,8 @@ body {
 
 #sky,
 #top,
-#bottom {
+#bottom
+{
     position: fixed;
     width: 1000px;
     height: auto
@@ -38,9 +39,20 @@ body {
     z-index: 1;
 }
 
+#border-div{
+    z-index: 6;
+    position: absolute;
+    width: 1200px;
+    height: auto;
+    bottom: -15%;
+    left:-10%;
+    pointer-events: none;
+}
+
 #top-bg,
 #bottom-bg,
-#bg {
+#bg,
+#border {
     width: 100%;
     pointer-events: none;
 }
