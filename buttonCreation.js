@@ -1,5 +1,5 @@
 
-// function makeButtons(){
+// makes the buttons and gives attributes
 function newButton(url, id, id2) {
     let button = document.createElement('img')
     button.src = url
@@ -16,7 +16,7 @@ function newButton(url, id, id2) {
 //give buttons functionality
 function buttonFunction(url1, url2, id, id2) {
     let button = newButton(url1, id, id2)
-    //will turn buttons off and on, add function
+    //turns buttons off and on, adds function
     button.addEventListener('click', (e) => {
         if (e.target.getAttribute("value") == "off") {
             e.target.src = url2
@@ -58,9 +58,9 @@ function throttleFunction(url1, url2, id, id2) {
             e.target.setAttribute('value', 'warp')
             e.target.src = url2
         }
-        else if(e.target.getAttribute("value") == 'warp'){
+        else if (e.target.getAttribute("value") == 'warp') {
             warpSpeed()
-            e.target.setAttribute('value','locked')
+            e.target.setAttribute('value', 'locked')
         }
         else if (e.target.getAttribute("value") == "locked") {
             window.alert(`We're out of fuel, genius.`)
@@ -68,6 +68,22 @@ function throttleFunction(url1, url2, id, id2) {
     })
     return button
 }
+
+//for the border buttons
+//I'll figure this out later
+// function borderButtons(id, url1, url2) {
+//     let buttonB = document.getElementById(id)
+//     buttonB.addEventListener('mouseover', (e) => {
+//         e.target.src = url1
+//     })
+//     buttonB.addEventListener('mouseoout', (e) => {
+//         e.target.src = url2
+//     })
+//     buttonB.addEventListener('click',(e) => {
+//         console.log('clicked')
+//     })
+// }
+// borderButtons('restart', 'assets/border-buttons/restart-dark.png', 'assets/border-buttons/restart.png')
 
 
 //defines where a button will be

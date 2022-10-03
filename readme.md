@@ -1,7 +1,8 @@
 # Trapped in Space Game
 
-## Random Notes (delete later!)
-Stretch goals for game: add a frame which has credits and info pages
+## Important Info for testers
+- Has to be played on Chrome
+- If you get the doom screen, click back button to reset the game
 
 ### A Brief Overview
 Have you ever wondered:
@@ -31,7 +32,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
 
 - **So Many Buttons:**
     The big draw of the game is to play with a lot of buttons. None of them are labelled, and it's not obvious what any of them should do. "Low key frustration" is the mood I'm going for.
-        - Half of them will just make a funny noise.
+        - Half of them will just make a funny noise (unfinished as of 10/2/22)
         - Each button has at least an *on* and *off* position.
     
     The coding goal is to have a few functions which work for every button, then some specialized events.
@@ -51,6 +52,7 @@ There's no set way to "win" the game, but the player can lose, and lose spectacu
     2. Photoshop CC
 
 ## Bugs
+
 9/27/22
 Can't really zoom into game without the buttons going haywire
 
@@ -62,16 +64,19 @@ Throttle isn't perfectly aligned.
 10/2/22
 - After finishing the keypad puzzle, you have to click the throttle a few times to warp.
 - If you go to the planet background before hitting the self destruct, the old bg will be on the doom page.
+- The frame scrolls with the browser while the game doesn't.
+- Not a bug, but I still need to finish the buttons on the border
 
 ## New Things I Learned
 - math.random
 - the includes keyword
-- how to take elements out of an array
+- how to take elements out of an array dynamically
 - some about "in" though I'm still not 100% on that
+- adding audio
 
 ## Citations
 
--Special thanks to JD Howell, who helped me with debugging.
+-Special thanks to JD Howell, who helped with debugging.
 
 -"Secret"'s comment on this conversation https://css-tricks.com/snippets/css/orientation-lock/ helped with turning orientation code.
 

@@ -1,3 +1,5 @@
+/* css for the doom screen */
+
 html {
     background-color: rgb(20, 10, 58);
 }
@@ -29,7 +31,7 @@ body {
     width: 100%;
     pointer-events: none;
 }
-
+/* ANIMATION */
 #red-console {
     z-index: 2;
     animation: shake 0.8s;
@@ -94,4 +96,11 @@ body {
 #border {
     width: 100%;
     pointer-events: none;
+}
+
+#info,
+#restart
+{
+    position:relative;
+    z-index:6;
 }

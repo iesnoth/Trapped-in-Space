@@ -9,14 +9,14 @@ body {
     text-align: center;
     min-height: 100vh;
 }
-
+/* holds all divs */
 #container {
     position: relative;
     width: 1000px;
     height: 667px;
     margin: 50px;
 }
-
+/* divs for background */
 #sky,
 #top,
 #bottom
@@ -40,7 +40,7 @@ body {
 }
 
 #border-div{
-    z-index: 6;
+    z-index: 5;
     position: absolute;
     width: 1200px;
     height: auto;
@@ -48,7 +48,7 @@ body {
     left:-10%;
     pointer-events: none;
 }
-
+/* images for background */
 #top-bg,
 #bottom-bg,
 #bg,
@@ -137,11 +137,15 @@ body {
     transform: translate(-50%, -50%);
 }
 
-/* .switch{
-    z-index: 5;
-} */
+/* Buttons */
+#info,
+#restart
+{
+    position:relative;
+    z-index:6;
+}
 
-/* Figure out how to get the image to fill the entire screen*/
+/* Mobile orientation, unfinished */
 @media (max-width: 800px) {
     html {
         transform: rotate(90deg);

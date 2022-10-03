@@ -82,6 +82,7 @@ destructButton()
 
 //***********abba puzzle */
 //check abbaSolution against abbaPressed Keys
+//plays 'dancing queen' when abbaPressedKeys = abbaSolution
 
 function checkSolutionAbba() {
     solvedAbba = true;
