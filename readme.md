@@ -67,6 +67,9 @@ Throttle isn't perfectly aligned.
 - The frame scrolls with the browser while the game doesn't.
 - Not a bug, but I still need to finish the buttons on the border
 
+10/3/22
+- Border isn't centered correctly.
+
 ## New Things I Learned
 - math.random
 - the includes keyword
