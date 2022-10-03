@@ -30,7 +30,6 @@ function checkSolution() {
         if (!myVar.padSolution.includes(value)) { solved = false }
     }
     if (solved) {
-        window.alert('Throttle unlocked!')
         unlock()
     }
     else {
