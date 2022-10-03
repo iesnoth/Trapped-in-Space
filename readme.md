@@ -59,7 +59,8 @@ Buttons move around when crossing browsers, have to view in Chrome for best expe
 10/1/22
 Throttle isn't perfectly aligned.
 
-Throttle was working, but now isn't and I'm not sure why. Might need to async/await something.
+10/2/22
+After finishing the keypad puzzle, you have to click the throttle a few times to warp.
 
 ## New Things I Learned
 - math.random

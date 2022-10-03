@@ -29,7 +29,7 @@ function checkSolution() {
         if (!myVar.padSolution.includes(value)) { solved = false }
     }
     if (solved) {
-        console.log(solved)
+        window.alert('Throttle unlocked!')
         unlock()
     }
     else {
@@ -46,10 +46,18 @@ function unlock() {
 
 function warpSpeed() {
         background = document.getElementById('bg');
-        background.src = 'assets/warp.gif';
+        if(background.src = 'assets/sky.gif')
+        {changeBg('assets/warp.gif');
         setTimeout(() =>{
-            changeBg(FILL IN)
+            changeBg('assets/planet-gif.gif')
         },4000)
+    }
+        else if (background.src = 'assets/planet-gif.gif')
+        {changeBg('assets/warp.gif');
+        setTimeout(() =>{
+            changeBg('assets/sky.gif')
+        },4000)     
+        }
 }
 
 function changeBg(url) {
