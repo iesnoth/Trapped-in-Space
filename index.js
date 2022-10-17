@@ -18,11 +18,11 @@ const switchArray = [
 ]
 
 const buttonArray = [
-    //border buttons
-    [
-        move(newButton('assets/border-buttons/restart.png', 'border-div', 'restart')).to(386, 73),
-        move(newButton('assets/border-buttons/info.png', 'border-div', 'info')).to(395, 73)
-    ]
+    //border buttons(removing until they work right)
+    // [
+    //     move(newButton('assets/border-buttons/restart.png', 'border-div', 'restart')).to(386, 73),
+    //     move(newButton('assets/border-buttons/info.png', 'border-div', 'info')).to(395, 73)
+    // ]
     //Top Console
     [
         //Left panel

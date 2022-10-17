@@ -42,7 +42,7 @@ body {
 #border-div{
     z-index: 5;
     position: fixed;
-    width: 1120px;
+    width: 1190px;
     pointer-events: none;
 }
 /* images for background */
