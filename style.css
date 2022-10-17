@@ -41,11 +41,8 @@ body {
 
 #border-div{
     z-index: 5;
-    position: absolute;
-    width: 1200px;
-    height: auto;
-    bottom: -15%;
-    left:-10%;
+    position: fixed;
+    width: 1120px;
     pointer-events: none;
 }
 /* images for background */

@@ -1,7 +1,7 @@
 const switchArray = [
     [
         //Bottom left sliders
-        move(buttonFunction('assets/slider/slider-down.png', 'assets/slider/slider-up.png', 'center-left',41)).to(-8, -63),
+        move(buttonFunction('assets/slider/slider-down.png', 'assets/slider/slider-up.png', 'center-left',41)).to(0, -63),
         move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',42)).to(-7, -60),
         move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',43)).to(-6, -58),
         move(buttonFunction('assets/slider/slider-down.png','assets/slider/slider-up.png', 'center-left',44)).to(-5, -54),
