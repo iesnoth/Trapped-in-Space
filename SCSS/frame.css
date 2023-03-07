@@ -1,0 +1,12 @@
+#border-div {
+  z-index: 5;
+  position: fixed;
+  width: 1190px;
+  pointer-events: none;
+}
+
+#info,
+#restart {
+  position: relative;
+  z-index: 6;
+}/*# sourceMappingURL=frame.css.map */

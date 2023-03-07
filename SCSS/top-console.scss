@@ -1,0 +1,26 @@
+/* Buttons Divs*/
+/* TOP */
+
+// mixins
+@mixin panel-placement($width,$height,$left,$top,$translate1){
+    width: $width;
+    height: $height;
+    z-index: 4;
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translate($translate1, -50%);
+    @content;
+}
+
+#left-buttons {
+    @include panel-placement(140px, 125px, 24%, 14%, -35%);
+}
+
+#center-buttons {
+    @include panel-placement(150px, 125px, 50%, 15%, -35%);
+}
+
+#right-buttons {
+    @include panel-placement(110px, 110px, 88%, 30%, -50%);
+}

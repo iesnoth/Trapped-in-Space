@@ -7,6 +7,75 @@
 // 3-5 SCSS partial files, imported
 // One of the SCSS error-handling directives
 
+@import "frame";
+@import "top-console";
+
 //variables
 $background-color: rgb(20, 10, 58);
 
+//mix-ins
+@mixin background-size {
+    position: fixed;
+    width: 1000px;
+    height: auto;
+    @content
+};
+@mixin no-pointer-events{
+    width: 100%;
+    pointer-events: none;
+}
+
+html {
+    background-color: $background-color;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+    /* holds all divs */
+    #container {
+        position: relative;
+        width: 1000px;
+        height: 667px;
+        margin: 50px;
+    }
+}
+
+#sky {
+    @include background-size();
+
+    #bg {
+        z-index: 0;
+    }
+}
+
+#top {
+    @include background-size();
+    z-index: 3;
+    height: 50%;
+}
+
+#bottom {
+    @include background-size();
+    z-index: 1;
+}
+
+/* Mobile orientation, unfinished */
+@media (max-width: 800px) {
+    html {
+        transform: rotate(90deg);
+        width: 100vh;
+        height: 100vw;
+        position: absolute;
+
+    }
+
+    #container {
+        margin: 0px;
+
+    }
+}

@@ -1,0 +1,31 @@
+/* Buttons Divs*/
+/* TOP */
+#left-buttons {
+  width: 140px;
+  height: 125px;
+  z-index: 4;
+  position: absolute;
+  left: 24%;
+  top: 14%;
+  transform: translate(-35%, -50%);
+}
+
+#center-buttons {
+  width: 150px;
+  height: 125px;
+  z-index: 4;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translate(-35%, -50%);
+}
+
+#right-buttons {
+  width: 110px;
+  height: 110px;
+  z-index: 4;
+  position: absolute;
+  left: 88%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=top-console.css.map */
