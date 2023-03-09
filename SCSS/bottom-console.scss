@@ -1,0 +1,11 @@
+// mixins
+@mixin panel-placement($width,$height,$left,$top,$translate1){
+    width: $width;
+    height: $height;
+    z-index: 4;
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translate($translate1, -50%);
+    @content;
+}

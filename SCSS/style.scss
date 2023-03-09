@@ -23,6 +23,7 @@ $background-color: rgb(20, 10, 58);
 @mixin no-pointer-events{
     width: 100%;
     pointer-events: none;
+    @content
 }
 
 html {
@@ -62,6 +63,11 @@ body {
 #bottom {
     @include background-size();
     z-index: 1;
+}
+
+#bottom-bg{
+    @include no-pointer-events();
+    position: absolute;
 }
 
 /* Mobile orientation, unfinished */
