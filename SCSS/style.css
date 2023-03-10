@@ -52,14 +52,21 @@
   top: 76.5%;
   transform: translate(-50%, -50%);
 }
-
-#keypad {
+#center-left #keypad {
   z-index: 7;
   position: absolute;
   width: 80px;
   height: 80px;
   left: 34px;
   bottom: 60px;
+}
+#center-left #big-keys {
+  z-index: 999;
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: 105px;
+  bottom: 71px;
 }
 
 #center-console {
@@ -106,10 +113,10 @@ body #container {
   position: fixed;
   width: 1000px;
   height: auto;
-  display: block;
 }
-
-#bg {
+#sky #bg {
+  width: 100%;
+  pointer-events: none;
   z-index: 0;
 }
 
@@ -136,6 +143,13 @@ body #container {
   position: absolute;
   bottom: 0px;
   left: 0px;
+}
+
+/* Buttons */
+#info,
+#restart {
+  position: relative;
+  z-index: 6;
 }
 
 /* Mobile orientation, unfinished */
