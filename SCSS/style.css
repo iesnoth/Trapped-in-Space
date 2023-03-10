@@ -43,6 +43,45 @@
   transform: translate(-50%, -50%);
 }
 
+#center-left {
+  width: 200px;
+  height: 250px;
+  z-index: 3;
+  position: absolute;
+  left: 30%;
+  top: 76.5%;
+  transform: translate(-50%, -50%);
+}
+
+#keypad {
+  z-index: 7;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 34px;
+  bottom: 60px;
+}
+
+#center-console {
+  width: 200px;
+  height: 250px;
+  z-index: 4;
+  position: absolute;
+  left: 51%;
+  top: 68%;
+  transform: translate(-50%, -50%);
+}
+
+#center-right {
+  width: 250px;
+  height: 250px;
+  z-index: 3;
+  position: absolute;
+  left: 72%;
+  top: 77%;
+  transform: translate(-50%, -50%);
+}
+
 html {
   background-color: rgb(20, 10, 58);
 }
@@ -57,6 +96,7 @@ body {
 }
 body #container {
   position: relative;
+  display: flex;
   width: 1000px;
   height: 667px;
   margin: 50px;
@@ -66,8 +106,10 @@ body #container {
   position: fixed;
   width: 1000px;
   height: auto;
+  display: block;
 }
-#sky #bg {
+
+#bg {
   z-index: 0;
 }
 
@@ -75,6 +117,7 @@ body #container {
   position: fixed;
   width: 1000px;
   height: auto;
+  display: block;
   z-index: 3;
   height: 50%;
 }
@@ -83,13 +126,16 @@ body #container {
   position: fixed;
   width: 1000px;
   height: auto;
+  display: block;
   z-index: 1;
+  height: 667px;
 }
-
-#bottom-bg {
+#bottom #bottom-bg {
   width: 100%;
   pointer-events: none;
   position: absolute;
+  bottom: 0px;
+  left: 0px;
 }
 
 /* Mobile orientation, unfinished */

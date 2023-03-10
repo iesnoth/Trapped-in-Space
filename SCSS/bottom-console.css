@@ -1,1 +1,45 @@
-/*# sourceMappingURL=bottom-console.css.map */
+#center-left {
+  width: 200px;
+  height: 250px;
+  z-index: 3;
+  position: absolute;
+  left: 30%;
+  top: 76.5%;
+  transform: translate(-50%, -50%);
+}
+#center-left #keypad {
+  z-index: 7;
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 34px;
+  bottom: 60px;
+}
+#center-left #big-keys {
+  z-index: 999;
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: 105px;
+  bottom: 71px;
+}
+
+#center-console {
+  width: 200px;
+  height: 250px;
+  z-index: 4;
+  position: absolute;
+  left: 51%;
+  top: 68%;
+  transform: translate(-50%, -50%);
+}
+
+#center-right {
+  width: 250px;
+  height: 250px;
+  z-index: 3;
+  position: absolute;
+  left: 72%;
+  top: 77%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=bottom-console.css.map */

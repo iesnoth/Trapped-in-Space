@@ -9,6 +9,7 @@
 
 @import "frame";
 @import "top-console";
+@import "bottom-console";
 
 //variables
 $background-color: rgb(20, 10, 58);
@@ -18,6 +19,7 @@ $background-color: rgb(20, 10, 58);
     position: fixed;
     width: 1000px;
     height: auto;
+    display:block;
     @content
 };
 @mixin no-pointer-events{
@@ -40,6 +42,7 @@ body {
     /* holds all divs */
     #container {
         position: relative;
+        display:flex;
         width: 1000px;
         height: 667px;
         margin: 50px;
@@ -48,10 +51,10 @@ body {
 
 #sky {
     @include background-size();
+}
 
-    #bg {
-        z-index: 0;
-    }
+#bg {
+    z-index: 0;
 }
 
 #top {
@@ -63,12 +66,17 @@ body {
 #bottom {
     @include background-size();
     z-index: 1;
-}
+    height:667px;
 
-#bottom-bg{
+    #bottom-bg{
     @include no-pointer-events();
     position: absolute;
+    bottom:0px;
+    left:0px;
 }
+}
+
+
 
 /* Mobile orientation, unfinished */
 @media (max-width: 800px) {

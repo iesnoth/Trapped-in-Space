@@ -1,11 +1,44 @@
 // mixins
-@mixin panel-placement($width,$height,$left,$top,$translate1){
+@mixin panel-placement($width, $height, $z, $left, $top) {
     width: $width;
     height: $height;
-    z-index: 4;
+    z-index: $z;
     position: absolute;
     left: $left;
     top: $top;
-    transform: translate($translate1, -50%);
+    transform: translate(-50%, -50%);
     @content;
+}
+
+#center-left {
+    @include panel-placement(200px, 250px, 3, 30%, 76.5%);
+
+    #keypad {
+        z-index: 7;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 34px;
+        bottom: 60px;
+    }
+
+    #big-keys {
+        z-index: 999;
+        position: absolute;
+        width: 90px;
+        height: 80px;
+        left: 105px;
+        bottom: 71px;
+    }
+}
+
+
+
+
+#center-console {
+    @include panel-placement(200px, 250px, 4, 51%, 68%)
+}
+
+#center-right {
+    @include panel-placement(250px, 250px, 3, 72%, 77%)
 }
