@@ -1,0 +1,18 @@
+@mixin border{
+    z-index: 90;
+    position: absolute;
+    text-align: center;
+    width: 1190px;
+    pointer-events: none;
+    @content
+}
+
+#border-div{
+    @include border();
+}
+
+#info,
+#restart {
+    position: relative;
+    z-index: 70;
+}

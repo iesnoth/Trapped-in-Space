@@ -1,0 +1,13 @@
+#border-div {
+  z-index: 90;
+  position: absolute;
+  text-align: center;
+  width: 1190px;
+  pointer-events: none;
+}
+
+#info,
+#restart {
+  position: relative;
+  z-index: 70;
+}/*# sourceMappingURL=border.css.map */

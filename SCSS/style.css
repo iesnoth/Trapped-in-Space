@@ -1,14 +1,16 @@
 #border-div {
-  z-index: 5;
+  z-index: 90;
   position: fixed;
+  text-align: center;
   width: 1190px;
   pointer-events: none;
 }
 
+/* Buttons */
 #info,
 #restart {
   position: relative;
-  z-index: 6;
+  z-index: 70;
 }
 
 /* Buttons Divs*/
@@ -93,13 +95,6 @@ html {
   background-color: rgb(20, 10, 58);
 }
 
-#border-div {
-  z-index: 90;
-  position: fixed;
-  width: 1190px;
-  pointer-events: none;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -112,7 +107,7 @@ body #container {
   position: relative;
   display: flex;
   width: 1000px;
-  height: 667px;
+  height: 700px;
   margin: 50px;
 }
 
@@ -165,13 +160,6 @@ body #container {
      object-fit: cover;
   -o-object-position: 100% 100%;
      object-position: 100% 100%;
-}
-
-/* Buttons */
-#info,
-#restart {
-  position: relative;
-  z-index: 70;
 }
 
 /* Mobile orientation, unfinished */

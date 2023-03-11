@@ -7,9 +7,10 @@
 // 3-5 SCSS partial files, imported
 // One of the SCSS error-handling directives
 
-@import "frame";
+@use "border";
 @import "top-console";
 @import "bottom-console";
+
 
 //variables
 $background-color: rgb(20, 10, 58);
@@ -22,9 +23,7 @@ $background-color: rgb(20, 10, 58);
     display: block;
     z-index:$z;
     @content
-}
-
-;
+};
 
 @mixin no-pointer-events {
     width: 100%;
@@ -34,13 +33,6 @@ $background-color: rgb(20, 10, 58);
 
 html {
     background-color: $background-color;
-}
-
-#border-div{
-    z-index: 90;
-    position: fixed;
-    width: 1190px;
-    pointer-events: none;
 }
 
 body {
@@ -55,7 +47,7 @@ body {
         position: relative;
         display: flex;
         width: 1000px;
-        height: 667px;
+        height: 700px;
         margin: 50px;
     }
 }
@@ -101,13 +93,6 @@ body {
         object-fit: cover;
         object-position: 100% 100%;
     }
-}
-
-/* Buttons */
-#info,
-#restart {
-    position: relative;
-    z-index: 70;
 }
 
 
