@@ -7,7 +7,7 @@
 // 3-5 SCSS partial files, imported
 // One of the SCSS error-handling directives
 
-@use "border";
+@import "border";
 @import "top-console";
 @import "bottom-console";
 
@@ -21,9 +21,11 @@ $background-color: rgb(20, 10, 58);
     width: 1000px;
     height: auto;
     display: block;
-    z-index:$z;
+    z-index: $z;
     @content
-};
+}
+
+;
 
 @mixin no-pointer-events {
     width: 100%;
@@ -64,20 +66,20 @@ body {
     }
 }
 
- 
+
 
 #top {
     @include background-size(3);
-    height: 35%;    
+    height: 35%;
 }
 
 #top-bg {
-        width: 1000px;
-        height: 350px;
-        object-fit: cover;
-        object-position: 50% 0%;
-        
-    }
+    width: 1000px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 50% 0%;
+
+}
 
 #bottom {
     @include background-size(1);

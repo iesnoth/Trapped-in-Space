@@ -1,12 +1,11 @@
 #border-div {
   z-index: 90;
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 1190px;
   pointer-events: none;
 }
 
-/* Buttons */
 #info,
 #restart {
   position: relative;
