@@ -132,7 +132,7 @@ body #container {
 
 #top-bg {
   width: 1000px;
-  height: 350px;
+  height: 400px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 50% 0%;
