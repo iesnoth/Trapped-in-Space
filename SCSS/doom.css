@@ -1,3 +1,4 @@
+/* css for the doom screen */
 #border-div {
   z-index: 5;
   position: fixed;
@@ -185,4 +186,63 @@ body #container {
   #container {
     margin: 0px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+html {
+  background-color: rgb(20, 10, 58);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+#container {
+  position: relative;
+  width: 1000px;
+  height: 667px;
+  margin: 50px;
+}
+
+#red-console,
+#sky {
+  position: fixed;
+  width: 1000px;
+  height: auto;
+}
+
+#you-lose,
+#bg {
+  width: 100%;
+  pointer-events: none;
+}
+
+/* ANIMATION */
+#red-console {
+  z-index: 2;
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {}
+#border-div {
+  z-index: 6;
+  position: absolute;
+  width: 1200px;
+  height: auto;
+  bottom: -15%;
+  left: -10%;
+}
+
+#border {
+  width: 100%;
+  pointer-events: none;
+}
+
+#info,
+#restart {
+  position: relative;
+  z-index: 6;
+}/*# sourceMappingURL=doom.css.map */

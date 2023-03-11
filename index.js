@@ -37,8 +37,8 @@ const buttonArray = [
     ],
     [
         //Circle TV
-        move(buttonFunction('assets/circle-tv/off.png', 'assets/circle-tv/on.png', 'top', 7)).to(-124, 593),
-        move(buttonFunction('assets/circle-tv/off.png', 'assets/circle-tv/on.png', 'top', 8)).to(-62, 597)
+        move(buttonFunction('assets/circle-tv/off.png', 'assets/circle-tv/on.png', 'top', 7)).to(-124, 287),
+        move(buttonFunction('assets/circle-tv/off.png', 'assets/circle-tv/on.png', 'top', 8)).to(-62, 289)
     ],
     //Center Panel
     //top row

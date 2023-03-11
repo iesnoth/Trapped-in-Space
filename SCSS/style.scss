@@ -15,11 +15,12 @@
 $background-color: rgb(20, 10, 58);
 
 //mix-ins
-@mixin background-size {
+@mixin background-size($z) {
     position: fixed;
     width: 1000px;
     height: auto;
     display: block;
+    z-index:$z;
     @content
 }
 
@@ -74,21 +75,20 @@ body {
  
 
 #top {
-    @include background-size();
-    z-index: 45;
-    height: 35%;
-    #top-bg {
+    @include background-size(3);
+    height: 35%;    
+}
+
+#top-bg {
         width: 1000px;
         height: 350px;
         object-fit: cover;
         object-position: 50% 0%;
         
-    }  
-}
+    }
 
 #bottom {
-    @include background-size();
-    z-index: 1;
+    @include background-size(1);
     height: 667px;
 
     #bottom-bg {
