@@ -11,7 +11,7 @@ const myVar = {
 }
 
 //function chooses a random button
-function doom() {
+function doom():number {
     myVar.doomNumber = Math.floor(Math.random() * 47) + 1;
     //turn this off when played by others
     console.log(myVar.doomNumber)
