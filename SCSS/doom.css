@@ -260,6 +260,14 @@ html {
   text-align: center;
   width: 1190px;
   pointer-events: none;
-  bottom: 15%;
-  left: 10%;
+}
+#border-div #border {
+  width: 100%;
+  pointer-events: none;
+}
+
+#info,
+#restart {
+  position: relative;
+  z-index: 6;
 }/*# sourceMappingURL=doom.css.map */

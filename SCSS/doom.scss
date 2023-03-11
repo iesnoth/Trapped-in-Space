@@ -106,17 +106,19 @@ html {
 
 #border-div {
     @include border();
-    bottom: 15%;
-    left: 10%
+
+    // bottom: 15%;
+    // left: 10%
+    #border {
+        width: 100%;
+        pointer-events: none;
+    }
 }
 
-// #border {
-//     width: 100%;
-//     pointer-events: none;
-// }
 
-// #info,
-// #restart {
-//     position: relative;
-//     z-index: 6;
-// }
+
+#info,
+#restart {
+    position: relative;
+    z-index: 6;
+}
