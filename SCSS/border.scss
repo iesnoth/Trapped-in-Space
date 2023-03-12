@@ -1,15 +1,11 @@
-@mixin border{
+@mixin border($position){
     z-index: 90;
-    position: absolute;
+    position: $position;
     text-align: center;
     width: 1190px;
     pointer-events: none;
+    display:flex;
     @content
-}
-
-#border-div{
-    @include border();
-    
 }
 
 #info,

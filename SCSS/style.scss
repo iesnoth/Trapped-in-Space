@@ -15,7 +15,10 @@
 //variables
 $background-color: rgb(20, 10, 58);
 
-//mix-ins
+html {
+    background-color: $background-color;
+}
+
 @mixin background-size($z) {
     position: fixed;
     width: 1000px;
@@ -23,18 +26,17 @@ $background-color: rgb(20, 10, 58);
     display: block;
     z-index: $z;
     @content
-}
-
-;
+};
 
 @mixin no-pointer-events {
     width: 100%;
     pointer-events: none;
     @content
-}
+};
 
-html {
-    background-color: $background-color;
+#border-div {
+    @include border(absolute);
+
 }
 
 body {

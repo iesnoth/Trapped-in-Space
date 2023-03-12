@@ -1,17 +1,3 @@
-#border-div {
-  z-index: 90;
-  position: absolute;
-  text-align: center;
-  width: 1190px;
-  pointer-events: none;
-}
-
-#info,
-#restart {
-  position: relative;
-  z-index: 70;
-}
-
 /* Buttons Divs*/
 /* TOP */
 #left-buttons {
@@ -92,6 +78,20 @@
 
 html {
   background-color: rgb(20, 10, 58);
+}
+
+#border-div {
+  z-index: 90;
+  position: absolute;
+  text-align: center;
+  width: 1190px;
+  pointer-events: none;
+  display: flex;
+}
+#border-div #info,
+#border-div #restart {
+  position: relative;
+  z-index: 70;
 }
 
 body {

@@ -1,30 +1,33 @@
 /* css for the doom screen */
 @use "sass:math";
-@import "style";
 @import "border";
 
-//mixins
-@mixin component-size {
-    position: fixed;
-    width: 1000px;
-    height: auto;
-    display: block;
-}
 
 html {
-    background-color: $background-color;
+    background-color: rgb(20, 10, 58);
 }
 
-#container {
-    position: relative;
-    width: 1200px;
-    height: 700px;
-    margin: 50px;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+    /* holds all divs */
+    #container {
+        position: relative;
+        display: flex;
+        width: 1200px;
+        height: 700px;
+    }
 }
 
 #red-console,
 #sky {
-    @include component-size();
+    position: fixed;
+    width: 1000px;
+    height: auto;
 }
 
 #you-lose,
@@ -44,8 +47,10 @@ html {
 
 //makes a random number for the shake animation
 @function get-random-num($max) {
-    @return Math.floor(Math.random() * $max)
-};
+    @return random($max)
+}
+
+;
 
 //array for shake animation
 $percents: 0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%;
@@ -57,21 +62,13 @@ $percents: 0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%;
             transform: translate(get-random-num(4)px, get-random-num(2)px) rotate(get-random-num(3)deg);
         }
     };
-}
+};
 
 #border-div {
-    @include border();
+    @include border(absolute);
 
     #border {
         width: 100%;
         pointer-events: none;
     }
-}
-
-
-
-#info,
-#restart {
-    position: relative;
-    z-index: 6;
 }
