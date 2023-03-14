@@ -1,5 +1,8 @@
 # Trapped in Space Game
 
+## Github Pages Deployment
+https://iesnoth.github.io/Trapped-in-Space/
+
 ## Important Info for testers
 - Has to be played on Chrome
 - If you get the doom screen, click back button to reset the game
@@ -93,6 +96,10 @@ https://github.com/HackerUSA-CE/JS-Web-Game-Part-7.git
 -AmerllicA's comment on this stack overflow conversation clarified taking an element from an array: https://stackoverflow.com/questions/3954438/how-to-remove-item-from-array-by-value
 
 -All of the art for the game was made by me. More of my art can be found online under the iesnoth moniker. This is my first foray into pixel art.
+
+## API
+
+There is no API for this build.
 
 ## Licensing
 
