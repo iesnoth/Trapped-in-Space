@@ -1,5 +1,7 @@
 # Trapped in Space Game
 
+## Changelog.md available in the docs above
+
 ## Github Pages Deployment
 https://iesnoth.github.io/Trapped-in-Space/
 
